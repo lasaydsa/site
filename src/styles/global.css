@@ -1,8 +1,13 @@
 :root {
   --red: #EC1F27;
 }
+
+@font-face {
+  font-family: "Alternate Gothic";
+  src: url(/AltGothic.ttf);
+}
 * {
-  font-family: "Alternate Gothic No3 D";
+  font-family: "Alternate Gothic";
 }
 
 html,body {
@@ -10,10 +15,11 @@ html,body {
   margin: 0;
   height: 100%;
   color: black;
+  overflow-y: scroll;
 }
 
 body {
-  container: body / size;
+  container: body;
   height: 100%;
   #bg {
     width: 75cqi;
