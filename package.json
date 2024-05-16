@@ -10,6 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.8.4"
+    "@github/relative-time-element": "^4.4.0",
+    "astro": "^4.8.4",
+    "normalize.css": "^8.0.1"
   }
 }

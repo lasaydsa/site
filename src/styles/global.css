@@ -1,0 +1,32 @@
+:root {
+  --red: #EC1F27;
+}
+* {
+  font-family: "Alternate Gothic No3 D";
+}
+
+html,body {
+  background: #FBD0D2;
+  margin: 0;
+  height: 100%;
+  color: black;
+}
+
+body {
+  container: body / size;
+  height: 100%;
+  #bg {
+    width: 75cqi;
+    max-height: 100cqi;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    overflow: visible;
+  }
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,body,main,section {
+  margin: 0;
+  padding: 0;
+}
