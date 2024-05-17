@@ -10,8 +10,11 @@
   font-family: "Alternate Gothic";
 }
 
-html,body {
+html {
   background: #FBD0D2;
+}
+
+html,body {
   margin: 0;
   height: 100%;
   color: black;
@@ -21,6 +24,7 @@ html,body {
 body {
   container: body;
   height: 100%;
+  background: none;
   #bg {
     width: 75cqi;
     max-height: 100cqi;
@@ -29,7 +33,7 @@ body {
     left: 0;
     background: transparent;
     overflow: visible;
-    z-index: 0;
+    z-index: -1;
   }
 }
 
