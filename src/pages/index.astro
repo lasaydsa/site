@@ -28,7 +28,7 @@
 
 		<section>
 			<h2>upcoming</h2>
-			{events.filter(e => e.data.datetime.getTime() > Date.now.getTime()).map(e => (
+			{events.filter(e => e.data.datetime.getTime() > Date.now()).map(e => (
 				<article class="event">
 					<p><a href={e.data.link}>{e.data.title.toLowerCase()}</a></p>
 					<relative-time datetime={e.data.datetime.toISOString()} format="relative" precision="minute" threshold="P6D" prefix="" hour="numeric" minute="numeric">
