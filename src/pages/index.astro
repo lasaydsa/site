@@ -1,7 +1,5 @@
 ---
 	import Layout from "../layouts/Layout.astro"
-	import { getCollection } from 'astro:content';
-	const events = await getCollection("events")
 ---
 
 <script>
@@ -22,20 +20,18 @@
 		<section>
 			<h2>join us</h2>
 			<p>
-				tuesdays at lunch in 202
+				tuesdays at lunch in G104
 			</p>
 		</section>
 
-		<section>
-			<h2>upcoming</h2>
-			{events.filter(e => e.data.datetime.getTime() > Date.now()).map(e => (
-				<article class="event">
-					<p><a href={e.data.link}>{e.data.title.toLowerCase()}</a></p>
-					<relative-time datetime={e.data.datetime.toISOString()} format="relative" precision="minute" threshold="P6D" prefix="" hour="numeric" minute="numeric">
-      		</relative-time>
-				</article>
-			))}
-		</section>
+    <section>
+      <h2>our campaigns</h2>
+      <p><a href="https://noadl.lasaydsa.org">no place for adl at lasa</a></p>
+      <p><a href="https://siegelforaustin.org">mike siegel for district 7</a></p>
+      <p><a href="https://joseforda.com">josé garza for district attroney</a></p>
+      <p><a href="https://austinagainstapartheid.com">austin against apartheid</a></p>
+      <p>public power</p>
+    </section>
 	</main>
 </Layout>
 
